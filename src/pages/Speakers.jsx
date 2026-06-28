@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
-import { Linkedin, Twitter, ArrowRight } from 'lucide-react';
+import { LinkedinIcon, TwitterIcon, ArrowRight } from 'lucide-react';
 import gsap from 'gsap';
 
 export default function Speakers() {
