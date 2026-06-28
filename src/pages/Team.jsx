@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { Linkedin, Twitter, Mail } from 'lucide-react';
+
 import gsap from 'gsap';
 
 export default function Team() {
@@ -44,9 +44,9 @@ export default function Team() {
                 <div className="text-[9px] text-gray-500 mb-6">{tm.division}</div>
 
                 <div className="flex justify-center gap-3 pt-4 border-t border-white/5 text-gray-500">
-                  <a href="#" className="hover:text-white transition-colors"><LinkedinIcon size={16} /></a>
-                  <a href="#" className="hover:text-white transition-colors"><TwitterIcon size={16} /></a>
-                  <a href="#" className="hover:text-white transition-colors"><Mail size={16} /></a>
+                  <a href="#" className="hover:text-white transition-colors" aria-label="LinkedIn"><i className="ri-linkedin-box-fill text-base"></i></a>
+                  <a href="#" className="hover:text-white transition-colors" aria-label="Twitter"><i className="ri-twitter-x-fill text-base"></i></a>
+                  <a href="#" className="hover:text-white transition-colors" aria-label="Mail"><i className="ri-mail-fill text-base"></i></a>
                 </div>
               </div>
             </div>

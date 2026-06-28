@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
-import { LinkedinIcon, TwitterIcon, ArrowRight } from "lucide-react";
+import { ArrowRight } from "lucide-react";
 import gsap from 'gsap';
 
 export default function Speakers() {
@@ -44,8 +44,8 @@ export default function Speakers() {
 
                 <div className="flex flex-col gap-3 pt-4 border-t border-white/5">
                   <div className="flex justify-center gap-3 text-gray-500">
-                    <a href="#" className="hover:text-white transition-colors"><LinkedinIcon size={16} /></a>
-                    <a href="#" className="hover:text-white transition-colors"><TwitterIcon size={16} /></a>
+                    <a href="#" className="hover:text-white transition-colors" aria-label="LinkedIn"><i className="ri-linkedin-box-fill text-base"></i></a>
+                    <a href="#" className="hover:text-white transition-colors" aria-label="Twitter"><i className="ri-twitter-x-fill text-base"></i></a>
                   </div>
                   <Link 
                     to={`/speakers/${sp.id}`} 
