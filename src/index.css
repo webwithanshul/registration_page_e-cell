@@ -1,0 +1,83 @@
+@import "tailwindcss";
+
+/* --- Custom Variables & Keyframes --- */
+:root {
+  --color-indigo-glow: rgba(99, 102, 241, 0.15);
+  --color-cyan-glow: rgba(6, 182, 212, 0.15);
+}
+
+@theme {
+  --color-brand-dark: #090d16;
+  --color-brand-surface: #0d1426;
+  --color-brand-indigo: #6366f1;
+  --color-brand-cyan: #06b6d4;
+  --color-brand-pink: #ec4899;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #090d16;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(99, 102, 241, 0.2);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #6366f1;
+}
+
+/* Canvas confetti positioning */
+.confetti-canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none;
+  z-index: 100;
+}
+
+/* Animations */
+@keyframes pulseGlow {
+  0%, 100% { transform: scale(0.96); opacity: 0.6; box-shadow: 0 0 0 0 rgba(6, 182, 212, 0.4); }
+  50% { transform: scale(1); opacity: 1; box-shadow: 0 0 0 10px rgba(6, 182, 212, 0); }
+}
+
+.animate-pulse-glow {
+  animation: pulseGlow 2.5s infinite;
+}
+
+/* Custom visual cards animations */
+@keyframes floating {
+  0% { transform: translateY(0px) rotate(0deg); }
+  50% { transform: translateY(-10px) rotate(2deg); }
+  100% { transform: translateY(0px) rotate(0deg); }
+}
+
+.animate-floating {
+  animation: floating 6s ease-in-out infinite;
+}
+
+/* Print Ticket Styles */
+@media print {
+  body * {
+    visibility: hidden;
+  }
+  #printable-pass, #printable-pass * {
+    visibility: visible;
+  }
+  #printable-pass {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%) scale(1.2);
+    box-shadow: none;
+    border: 1px solid #ccc;
+    background: white !important;
+    color: black !important;
+  }
+}

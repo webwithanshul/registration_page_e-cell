@@ -1,0 +1,29 @@
+[
+  {
+    "id": "ES26-90374",
+    "name": "Jane Doe",
+    "email": "jane.doe@mit.edu",
+    "college": "MIT",
+    "phone": "9988776655",
+    "event": "Hackathon",
+    "registeredAt": "2026-06-27T11:00:12.854Z"
+  },
+  {
+    "id": "ES26-19354",
+    "name": "Anshul Soni",
+    "email": "anshulsoni211106@gmail.com",
+    "college": "jnct",
+    "phone": "8770230854",
+    "event": "Hackathon",
+    "registeredAt": "2026-06-27T11:08:26.072Z"
+  },
+  {
+    "id": "ES26-36515",
+    "name": "Anshul Soni",
+    "email": "anshulsoni21116@gmail.com",
+    "college": "jnct4",
+    "phone": "8770230854",
+    "event": "Hackathon",
+    "registeredAt": "2026-06-27T11:17:09.134Z"
+  }
+]
