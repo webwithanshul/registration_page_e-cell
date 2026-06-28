@@ -1,7 +1,9 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import { ArrowRight, Zap, Code2, Rocket, MessagesSquare } from 'lucide-react';
+import { ArrowRight, Code2, Rocket, MessagesSquare } from 'lucide-react';
 import gsap from 'gsap';
+import lnctLogoWhite from '../assets/lnct_logo_white.png';
+import ecellLogo from '../assets/ecell_logo.png';
 
 export default function Home() {
   useEffect(() => {
@@ -32,6 +34,14 @@ export default function Home() {
       {/* Hero section */}
       <section className="relative px-6 py-20 max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-between gap-12">
         <div className="flex-1 max-w-2xl text-left">
+          
+          {/* Presented By Logos */}
+          <div className="gsap-hero-elem flex items-center gap-4 mb-8">
+            <img src={lnctLogoWhite} className="h-8 w-auto opacity-90" alt="LNCT Group of Colleges" />
+            <span className="h-6 w-[1px] bg-white/15"></span>
+            <img src={ecellLogo} className="h-8 w-auto opacity-90" alt="JNCT E-Cell" />
+          </div>
+
           <div className="gsap-hero-elem inline-flex items-center gap-2 px-4 py-1.5 bg-white/3 border border-white/5 rounded-full text-xs font-semibold text-gray-300 mb-6">
             <span className="w-2 h-2 rounded-full bg-brand-cyan shadow-lg shadow-brand-cyan animate-pulse"></span>
             E-Summit 2026: The Paradigm Shift

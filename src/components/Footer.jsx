@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Zap } from 'lucide-react';
+import ecellLogoSymbol from '../assets/ecell_logo_symbol.png';
+import lnctLogoWhite from '../assets/lnct_logo_white.png';
 
 export default function Footer() {
   return (
@@ -9,12 +10,12 @@ export default function Footer() {
         
         {/* Brand Summary */}
         <div className="flex flex-col gap-4">
-          <Link to="/" className="flex items-center gap-2 font-heading font-extrabold text-xl text-white">
-            <Zap className="text-brand-cyan" size={24} />
-            <span>E-Cell 2026</span>
-          </Link>
+          <div className="flex items-center gap-3">
+            <img src={ecellLogoSymbol} className="h-9 w-auto" alt="JNCT E-Cell" />
+            <img src={lnctLogoWhite} className="h-7 w-auto border-l border-white/25 pl-3" alt="LNCT Group" />
+          </div>
           <p className="text-gray-400 text-xs leading-relaxed max-w-sm">
-            E-Summit is the flagship entrepreneurship conclave organized by the Entrepreneurship Cell to nurture student innovation and connect founders with VC funds.
+            E-Summit is the flagship entrepreneurship conclave organized by the Entrepreneurship Cell of JNCT to nurture student innovation and connect founders with VC funds.
           </p>
           <div className="flex gap-3 mt-2">
             <a href="#" className="w-8 h-8 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-gray-400 hover:bg-brand-indigo hover:text-white transition-all duration-300" aria-label="LinkedIn"><i className="ri-linkedin-box-fill text-base"></i></a>

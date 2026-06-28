@@ -1,5 +1,6 @@
 import React from 'react';
-import { Zap } from 'lucide-react';
+import ecellLogoSymbol from '../assets/ecell_logo_symbol.png';
+import lnctLogoWhite from '../assets/lnct_logo_white.png';
 
 export default function PassCard({ pass }) {
   if (!pass) return null;
@@ -18,8 +19,9 @@ export default function PassCard({ pass }) {
 
       {/* Pass Header */}
       <div className="flex justify-between items-center border-b border-dashed border-gray-800 pb-5 mb-5 mt-2">
-        <div className="flex items-center gap-2 font-heading font-extrabold text-white text-base">
-          <Zap className="text-brand-cyan" size={18} />
+        <div className="flex items-center gap-2.5 font-heading font-extrabold text-white text-base">
+          <img src={ecellLogoSymbol} className="h-6 w-auto" alt="E-Cell" />
+          <img src={lnctLogoWhite} className="h-5 w-auto border-l border-white/20 pl-2" alt="LNCT" />
           <span>E-Summit '26</span>
         </div>
         <span className="text-[10px] font-bold tracking-wider uppercase text-brand-indigo bg-brand-indigo/15 border border-brand-indigo/35 py-1 px-3 rounded-full">

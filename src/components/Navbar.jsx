@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Zap, Menu, X } from 'lucide-react';
+import { Menu, X } from 'lucide-react';
+import ecellLogoSymbol from '../assets/ecell_logo_symbol.png';
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
@@ -43,9 +44,9 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-6 flex justify-between items-center">
         
         {/* Logo */}
-        <Link to="/" className="flex items-center gap-2 font-heading font-extrabold text-xl text-white shrink-0">
-          <Zap className="text-brand-cyan" size={24} />
-          <span>E-Cell <span className="bg-gradient-to-r from-brand-indigo to-brand-cyan bg-clip-text text-transparent">2026</span></span>
+        <Link to="/" className="flex items-center gap-2.5 font-heading font-extrabold text-xl text-white shrink-0">
+          <img src={ecellLogoSymbol} className="h-8 w-auto" alt="JNCT E-Cell Logo" />
+          <span>JNCT E-Cell <span className="bg-gradient-to-r from-brand-indigo to-brand-cyan bg-clip-text text-transparent">2026</span></span>
         </Link>
 
         {/* Responsive Navbar Links */}
