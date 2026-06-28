@@ -1,7 +1,13 @@
 import React, { useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { useSelector } from 'react-redux';
-import { Linkedin, Twitter, ArrowLeft, Bookmark } from 'lucide-react';
+import {
+  Zap,
+  LinkedinIcon,
+  TwitterIcon,
+  InstagramIcon,
+  YoutubeIcon,
+} from "lucide-react";
 import gsap from 'gsap';
 
 export default function SpeakerDetail() {
