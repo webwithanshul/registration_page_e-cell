@@ -31,8 +31,7 @@ export default function Navbar() {
     { name: 'Gallery', path: '/gallery', visibility: 'hidden min-[1100px]:inline-block' },
     { name: 'Team', path: '/team', visibility: 'hidden min-[1200px]:inline-block' },
     { name: 'FAQ', path: '/faq', visibility: 'hidden min-[1200px]:inline-block' },
-    { name: 'Contact', path: '/contact', visibility: 'hidden xl:inline-block' },
-    { name: 'Admin', path: '/admin', visibility: 'hidden xl:inline-block' }
+    { name: 'Contact', path: '/contact', visibility: 'hidden xl:inline-block' }
   ];
 
   return (
