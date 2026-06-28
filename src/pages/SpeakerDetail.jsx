@@ -54,8 +54,8 @@ export default function SpeakerDetail() {
             <p className="text-xs text-gray-500 mb-6 text-center">{speaker.company}</p>
             
             <div className="flex gap-4 text-gray-500 border-t border-white/5 pt-4 w-full justify-center">
-              <a href="#" className="hover:text-white transition-colors"><Linkedin size={18} /></a>
-              <a href="#" className="hover:text-white transition-colors"><Twitter size={18} /></a>
+              <a href="#" className="hover:text-white transition-colors"><LinkedinIcon size={18} /></a>
+              <a href="#" className="hover:text-white transition-colors"><TwitterIcon size={18} /></a>
             </div>
           </div>
 

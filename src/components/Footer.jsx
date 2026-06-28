@@ -1,6 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Zap, Linkedin, Twitter, Instagram, Youtube } from 'lucide-react';
+import {
+  Zap,
+  LinkedinIcon,
+  TwitterIcon,
+  InstagramIcon,
+  YoutubeIcon,
+} from "lucide-react";
 
 export default function Footer() {
   return (
@@ -17,10 +23,10 @@ export default function Footer() {
             E-Summit is the flagship entrepreneurship conclave organized by the Entrepreneurship Cell to nurture student innovation and connect founders with VC funds.
           </p>
           <div className="flex gap-3 mt-2">
-            <a href="#" className="w-8 h-8 rounded-full bg-white/5 border border-white/10 flex items-center justify-content-center text-gray-400 hover:bg-brand-indigo hover:text-white transition-all duration-300"><Linkedin size={16} /></a>
-            <a href="#" className="w-8 h-8 rounded-full bg-white/5 border border-white/10 flex items-center justify-content-center text-gray-400 hover:bg-brand-indigo hover:text-white transition-all duration-300"><Twitter size={16} /></a>
-            <a href="#" className="w-8 h-8 rounded-full bg-white/5 border border-white/10 flex items-center justify-content-center text-gray-400 hover:bg-brand-indigo hover:text-white transition-all duration-300"><Instagram size={16} /></a>
-            <a href="#" className="w-8 h-8 rounded-full bg-white/5 border border-white/10 flex items-center justify-content-center text-gray-400 hover:bg-brand-indigo hover:text-white transition-all duration-300"><Youtube size={16} /></a>
+            <a href="#" className="w-8 h-8 rounded-full bg-white/5 border border-white/10 flex items-center justify-content-center text-gray-400 hover:bg-brand-indigo hover:text-white transition-all duration-300"><LinkedinIcon size={16} /></a>
+            <a href="#" className="w-8 h-8 rounded-full bg-white/5 border border-white/10 flex items-center justify-content-center text-gray-400 hover:bg-brand-indigo hover:text-white transition-all duration-300"><TwitterIcon size={16} /></a>
+            <a href="#" className="w-8 h-8 rounded-full bg-white/5 border border-white/10 flex items-center justify-content-center text-gray-400 hover:bg-brand-indigo hover:text-white transition-all duration-300"><InstagramIcon size={16} /></a>
+            <a href="#" className="w-8 h-8 rounded-full bg-white/5 border border-white/10 flex items-center justify-content-center text-gray-400 hover:bg-brand-indigo hover:text-white transition-all duration-300"><YoutubeIcon size={16} /></a>
           </div>
         </div>
 

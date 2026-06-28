@@ -44,8 +44,8 @@ export default function Team() {
                 <div className="text-[9px] text-gray-500 mb-6">{tm.division}</div>
 
                 <div className="flex justify-center gap-3 pt-4 border-t border-white/5 text-gray-500">
-                  <a href="#" className="hover:text-white transition-colors"><Linkedin size={16} /></a>
-                  <a href="#" className="hover:text-white transition-colors"><Twitter size={16} /></a>
+                  <a href="#" className="hover:text-white transition-colors"><LinkedinIcon size={16} /></a>
+                  <a href="#" className="hover:text-white transition-colors"><TwitterIcon size={16} /></a>
                   <a href="#" className="hover:text-white transition-colors"><Mail size={16} /></a>
                 </div>
               </div>
